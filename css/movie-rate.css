@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ul 태그 부분 */
+.poster_list {
+  /* !!!!!!!!!!!!!!!!! */
+  position: relative;
+  /* !!!!!!!!!!!!!!!!! */
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 포스터 이미지 li 태그 */
+.poster_list li {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+/* ul > li > img */
+.poster_list img {
+  width: 133px;
+  float: left;
+  margin: 5px;
+  padding: 0;
+  z-index: 5;
+}
+
+/* ul > li > div(caption) */
+.poster_list .caption {
+  font-size: 10px;
+  position: absolute;  
+  top:200px;  
+  /* top값에 따라서 애니메이션 위치가 바뀜 */
+  /* 기준 위치보다 200px 아래로 */
+  width: 133px;
+  height: 190px;
+  padding-top:30px;
+  background:rgba(0,0,0,0.6);  /* 반투명한 검정 배경 */ 
+  opacity:0;  /* 화면에 보이지 않게 */ 
+  transition: all 0.3s ease-out;  /* 나타날 때 부드럽게 트랜지션 추가 */
+  z-index:10;  /* 다른 요소보다 위에 있도록 */ 
+}
+
+/* 클릭하고 있을 때 사용가능 */
+.poster_list li:active .caption {
+  opacity: 1;  
+  /* 설명글이 화면에 보이게  */
+  transform: translateY(-200px);  
+  /* 설명글이 위로 200p x 이동하게 */
+}
+.poster_list .caption h2, .poster_list .caption p {
+  color: #fff;
+  text-align: center;
+}
+/* 평점 페이지 이동 a 태그 배치  */
+.poster_list .caption a {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 425px ) {
+  .poster_list {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .poster_list li {
+    display: table-cell;
+    margin: 0;
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: left;
+  } 
+}
