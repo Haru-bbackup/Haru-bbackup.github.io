@@ -90,6 +90,39 @@
     margin-left: 10px;
     transition: all 0.6s ease-in-out;
   }
+  .caption2{
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    background: black;
+    z-index: 10;
+    top: 180px;
+    opacity: 0.7;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 10px;;
+  }
+  .item2{
+    float: left;
+    width: 90px;
+    text-align: center;
+  }
+  .item22{
+    color: red;
+    font-size: x-large;
+    opacity: 1;
+  }
+  .item33{
+    color: red;
+    font-size: x-large;
+    opacity: 1;
+  }
+  .item3{
+    float: left;
+    width: 90px;
+    text-align: center;
+  }
   .item:hover .caption{
     opacity: 0.6;
   }
@@ -210,6 +243,39 @@ body {
   margin-left: 10px;
   transition: all 0.6s ease-in-out;
 }
+.caption2{
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  background: black;
+  z-index: 10;
+  top: 130px;
+  opacity: 0.7;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 10px;;
+}
+.item2{
+  float: left;
+  width: 75px;
+  text-align: center;
+}
+.item22{
+  color: red;
+  font-size: x-large;
+  opacity: 1;
+}
+.item33{
+  color: red;
+  font-size: x-large;
+  opacity: 1;
+}
+.item3{
+  float: left;
+  width: 75px;
+  text-align: center;
+}
 .item:hover .caption{
   opacity: 0.6;
 }
@@ -318,13 +384,46 @@ body {
   width: 180px;
   height: 250px;
   background: black;
-  z-index: 10;
+  z-index: 20;
   top: 1px;
   opacity: 0;
   color: white;
   border-radius: 20px;
   margin-left: 10px;
   transition: all 0.6s ease-in-out;
+}
+.caption2{
+  position: absolute;
+  width: 180px;
+  height: 70px;
+  background: black;
+  z-index: 10;
+  top: 180px;
+  opacity: 0.7;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 10px;;
+}
+.item2{
+  float: left;
+  width: 90px;
+  text-align: center;
+}
+.item22{
+  color: red;
+  font-size: x-large;
+  opacity: 1;
+}
+.item33{
+  color: red;
+  font-size: x-large;
+  opacity: 1;
+}
+.item3{
+  float: left;
+  width: 90px;
+  text-align: center;
 }
 .item:hover .caption{
   opacity: 0.6;
