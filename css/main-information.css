@@ -394,4 +394,19 @@ body {
   height: 0;
   width: 0;
 }
+#carousel-container, #carousel-container2{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+#carousel, #carousel2{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+.carousel-item{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
 }
