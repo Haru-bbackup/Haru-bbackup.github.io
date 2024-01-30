@@ -1,4 +1,4 @@
-@media screen and (max-width: 426px){
+@media screen and (min-width: 1025px){
   body {
     margin: 0;
     padding: 0;
@@ -17,6 +17,8 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     padding-left: 0;
+    margin-left: 250px;
+    margin-right: 300px;
   }
   .nav1 li{
     display: inline-block;
@@ -58,8 +60,7 @@
   }
   .grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-  
+    grid-template-columns: repeat(4,1fr);
   }
   
   .item img{
@@ -68,10 +69,9 @@
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    
   }
   .item{
-    /* float: left; */
-    /* padding: 0; */
     position: relative;
     overflow: hidden;
     list-style-type: none;
@@ -101,4 +101,245 @@
   .movie-date{
     text-align: center;
   }
+  
+  .sidebar1{
+    float: left;
   }
+  .sidebar2{
+    float: right;
+  }
+  .sidebar1, .sidebar2{
+    width: 15%;
+  }
+  .sidebar1 img, .sidebar2 img{
+    width: 100%;
+  }
+}
+
+
+/* ------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 426px){
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav1 {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: stretch;
+}
+.nav2{
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-left: 250px;
+  margin-right: 300px;
+}
+.nav1 li{
+  display: inline-block;
+  border: 1px solid;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 2px solid;
+  margin: 0;
+  font-size: large;
+  padding-left: 15dvh;
+  padding-right: 15dvh;
+  padding-top: 3dvh;
+  padding-bottom: 3dvh;
+  color: black;
+}
+.nav1 li:hover{
+  background-color: rgb(235, 69, 69);
+  color: white;
+}
+.nav2 li{
+  display: inline-block;
+  border: 1px solid;
+  border-left: 1px;
+  border-right: 1px;
+  color: black;
+}
+.nav2 li:hover{
+  color: red;
+}
+.nav1 li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 li a{
+  text-decoration: none;
+}
+.nav1 , .nav2{
+  list-style-type: none;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.item img{
+  width: 150px;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.item{
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 10px;
+}
+.caption{
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background: black;
+  z-index: 10;
+  top: 1px;
+  opacity: 0;
+  color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.item:hover .caption{
+  opacity: 0.6;
+}
+.movie-name{
+  color: yellow;
+  font-size: large;
+  text-align: center;
+}
+.movie-date{
+  text-align: center;
+}
+
+.sidebar1{
+  float: left;
+}
+.sidebar2{
+  float: right;
+}
+.sidebar1, .sidebar2{
+  width: 15%;
+}
+.sidebar1 img, .sidebar2 img{
+  width: 100%;
+}
+}
+/* ------------------------------------------------------------------- */
+@media screen and (max-width: 426px){
+body {
+  margin: 0;
+  padding: 0;
+}
+.nav1 {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: stretch;
+}
+.nav2{
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0;
+}
+.nav1 li{
+  display: inline-block;
+  border: 1px solid;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 2px solid;
+  margin: 0;
+  font-size: large;
+  padding-left: 15dvh;
+  padding-right: 15dvh;
+  padding-top: 3dvh;
+  padding-bottom: 3dvh;
+  color: black;
+}
+.nav1 li:hover{
+  background-color: rgb(235, 69, 69);
+  color: white;
+}
+.nav2 li{
+  display: inline-block;
+  border: 1px solid;
+  border-left: 1px;
+  border-right: 1px;
+  color: black;
+}
+.nav2 li:hover{
+  color: red;
+}
+.nav1 li a{
+  text-decoration: none;
+  color: black;
+}
+.nav2 li a{
+  text-decoration: none;
+}
+.nav1 , .nav2{
+  list-style-type: none;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.item img{
+  width: 180px;
+  height: 250px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.item{
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 10px;
+}
+.caption{
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  background: black;
+  z-index: 10;
+  top: 1px;
+  opacity: 0;
+  color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.item:hover .caption{
+  opacity: 0.6;
+}
+.movie-name{
+  color: yellow;
+  font-size: large;
+  text-align: center;
+}
+.movie-date{
+  text-align: center;
+}
+.sidebar1 , .sidebar2 {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+}
