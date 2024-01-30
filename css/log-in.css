@@ -1,0 +1,129 @@
+*{
+  margin: 0px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.header a{
+  color: black;
+}
+
+.id{
+
+}
+
+.id-input, .pass-input{
+  display: flex;
+  height: 40px;
+  width: 400px;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.login{
+  display: flex;
+  height: 40px;
+  width: 400px;
+  border: 1px solid;
+  border-color:blue;
+  border-radius: 80px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.login-p{
+  color: white;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.menu p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  color: black;
+}
+
+.end{
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img{
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  border: 0px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:425px) {
+  .header{
+    width: 100%;
+  }
+  .id{
+    width: 100%;
+  }
+  .password{
+    width: 100%;
+  }
+  .login{
+    width: 100%;
+  }
+  .menu{
+    width: 100%;
+  }
+  .menu2{
+    width: 100%;
+  }
+  .end{
+    width: 100%;
+  }
+  .img{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  .main{
+    width: 90%;
+  }
+
+  .id-input, .pass-input{
+    width: 90%;
+  }
+  .img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
