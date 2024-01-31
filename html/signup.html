@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+</style>
+<link rel="stylesheet" href="../css/signup.css">
+<body>
+  <header class="header">
+    <div class="signup">
+      <a href="#"><h1 style=>회원가입</h1></a>
+    </div>
+    <div class="id">
+      <h5>아이디</h5>
+      <input type="text" placeholder="     이메일 형식으로 작성해주세요." class="id-input">
+    </div>
+    <div class="password">
+      <h5>비밀번호</h5>
+      <input type="password" placeholder="     영어, 숫자, 특수문자를 혼용하여 작성해주세요." class="password-input">
+    </div>
+    <div class="password-chec">
+      <h5>비밀번호 재확인</h5>
+      <input type="password" class="password-checkbox">
+    </div>
+    <div class="name-sex">
+      <div>
+        <h5>이름</h5>
+        <input type="text" class="name">
+      </div>
+      <div class="index-menu">
+        <h5>생년월일/성별</h5>
+          <div class="menu">
+          <input type="date" max="2024-12-31" class="input-date">
+          <input type="radio" name="sex" value="man">남
+          <input type="radio" name="sex" value="woman">여
+          </div>
+      </div>
+    </div>
+    <div class="email-box">
+      <h5>본인 확인 이메일</h5>
+      <input type="email" placeholder="     선택입력" class="email">
+    </div>
+    <div class="submit">
+      <a href="#"><button class="submit-button"><h3>회원가입</h3></button></a>
+    </div>
+
+  </header>
+</body>
+</html>
