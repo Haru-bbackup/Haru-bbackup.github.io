@@ -1,16 +1,22 @@
-/* 설명 부분 */
+.main {
+  margin-left: 10px;
+}
+
+/* top 클래스 안의 설명 부분 */
 #mov_info {
   text-align: center; /* 텍스트를 가운데 정렬 */
   padding-bottom: 20px;
   color: darkgrey;
+  font-size: 18px;
 }
 
-/* 메인 설명 부분 */
+/* content 부분 안의 메인 설명 부분 */
 .story_main {
   padding-bottom: 20px;
   color: darkgrey;
-
 }
+
+
 
 /* 최소 425px 이상인 경우 미디어쿼리 */
 @media screen and (min-width: 425px) {
@@ -33,11 +39,15 @@
   }
 
   .story_main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding-top: 20px;
+    margin: 0px 50px;
   }
 }
+
+
 
 #text_more {
   display: none;
@@ -57,8 +67,9 @@ img {
 }
 
 .carousel-container {
+  /* 너비 400 / 높이 200 초기값 */
   width: 400px;
-  height: 200px;
+  height: 300px;
   margin: auto;
   overflow: hidden;
   border: 5px solid black;
