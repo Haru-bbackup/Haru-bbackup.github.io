@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/review.css">
+
+    <style>@media screen and ( max-width: 420px){}</style>
+    <!-- 폰트어썸 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+</head>
+<body>
+        <div class="header"> 여기는 헤더구간입니다 </div>
+        <div class="screen">
+            <img src="../img/sge/AstarIsBorn.jpg" alt="" width="900px" >
+
+        
+                <button id="button1"><i class="fa-regular fa-thumbs-down fa-xl" ></i> &emsp; 별로에요
+                </button >
+                <button id="button2"><i class="fa-regular fa-thumbs-up fa-xl" ></i> &emsp; 좋아요</button>
+
+            <nav>
+                <ul>
+                    <li><a href=""  onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
+                    <li><a href=""  onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
+                    <li><a href=""  onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
+                    <li><a href=""  onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
+                </ul>
+
+            </nav>
+            <div class="container">
+                <div class="item1">내가 쓴 리뷰</div>
+                <div class="item2">
+                    <div class="writereview">
+                        <p style="font-weight: 500; font-size: 18px;">이 작품 어떠셨나요?</p>
+                        <div class="rating">
+                            <span class="rating__result"></span> 
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                        </div>
+                        <p><button id="reviewButton" onclick="openLoginPopup()">리뷰 작성</button></p>
+                        <div id="loginPopup">
+                            <div id="loginBox">
+                            <span id="closeButton" onclick="closeLoginPopup()">X</span>
+                            <h2>로그인하고 모든 기능을  자유롭게 이용해보세요!</h2>
+                            <!-- 로그인 폼 등을 추가 -->
+                            <div class="loginform">
+                                <img src="../img/sge/present-removebg-preview.png" alt="">
+                                <button class="kakaotalkbutton"><i class="fa-solid fa-comment" style="padding-top: 15px;">&ensp;카카오톡으로 시작하기</i></button>
+                                <button class="otherwaybutton"><i class="fa-solid fa-comment" style="padding-top: 15px;">&ensp;다른 방법으로 시작하기</i></button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3"><p>모든 리뷰</p></div>
+                <div class="item4" id="scroll">
+                    <div class="contentwrap1">
+                        <a href="" style="font-weight: 700;">MarkVill <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 3.5 </a>
+                        <p>난 당신과 달라요. 그것이 당신을 덜 사랑한다는 말을 아니에요</p><br>
+                        <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color:rgb(250, 90, 90); padding-left: 5px;"></i> 10개</div>
+                        <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;"></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                        <hr class="divider" style="margin: 0px 0px 8px ;">
+    
+                    </div>
+
+                    <div class="contentwrap1">
+                            <a href="" style="font-weight: 700;">sehun1113@gmail.com <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 3.0</a>
+                            <p>연출, 영상, 음악 거기다 메시지까지 모든 것이 완벽하다. 사랑이란 상대를 위해 상의 주머니에 옷핀을 꽂는 것이고. 친구는 “넌 행복할 자격이 있어”라고 말해주는 존재라는 걸 깨닫게 해준 영화. 그리고 어떤 해석도 하고 싶지 않고 모든 장면을 사랑하는 작품</p><br>
+                            <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color:rgb(250, 90, 90); padding-left: 5px;"></i> 0개</div>
+                            <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;"></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                            <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                    <div class="contentwrap1">
+                                <a href="" style="font-weight: 700;">gracias09 <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 4.5</span></a>
+                                <p>영화 제목에 담긴 태도와 의미
+                                    by 영화 읽어주는 남자
+                                    <스타 이즈 본>에선 평소 기대하기 힘든 두 가지, 그리고 그들의 시너지를 보고 들을 수 있다. 연기자로서도 얼굴을 종종 비췄지만, 영화의 첫 주연을 맡은 레이디 가가의 연기와 브래들리 쿠퍼의 노래를 듣는다는 건 흥미롭다. 그리고 두 사람은 연기와 노래 모두에서 놀랄만한 순간을 남기기도 했다. 여기에 브래들리 쿠퍼는 감독까지 맡았으니, <스타 이즈 본>은 새로운 도전들 이 한데 모인 영화라 해도 될 것 같다. (이 영화의 연출을 ‘클린트 이스트우드’가 고려했었다는 정보 탓인지, 이상하게도 클린트 이스트우드의 잔상 속에서 이 영화를 관람했다는 점을 미리 밝힌다.)
+                                    잦은 음악 사용의 호불호
+                                    <section id="testSection">
+                                        스타 이즈 본은 제목처럼 한 스타의 탄생과 관련된 이야기다. 스타였던 남자와 무명이 여자의 음악 및 관계가 펼쳐진다. 음악으로 시작해 음악으로 끝나는 영화로 <스타 이즈 본>의 노래는 인물들의 상황, 감정, 내면이 담긴 제2의 대사로서 기능하고 있다. 이런 음악을 자주 들을 수 있는 덕에 진한 감동이 끝없이 귀로 쏟아지며, 레이디 가가라는 걸출한 가수 덕에 콘서트를 감상하는 듯한 즐거움도 있다.
+                                        하지만 노래의 사용 빈도가 잦아, 후반부로 갈수록 노래에 큰 흥미를 갖지 못할 수도 있다. 혹은, 음악이 없는 장면이 심심하게 느껴질 수도 있다. 클린트 이스트우드 감독이라면, 음악의 사용을 좀 더 절제하는 방향을 택했을 것 같다. 노래에서 오는 감동을 줄이는 대신, 음악 없는 장면의 힘을 더 높이면서 인물에게 더 관심을 가지려 하지 않았을까. 잭슨(브래들리 쿠퍼)의 혼란과 갈등이 술과 술주정으로 단편적으로 표현될 뿐, 그 알코올을 뚫고서 내면을 깊게 바라볼 기회가 잘 없던 것 같다. 지금도 나쁘지 않지만, 음악이 아닌 인물과 이야기만으로도 관객을 좀 더 흔들 수 있었을 것 같아 아쉽다.
+                                    </section>
+                                    <button id="testButton">더보기</button></p>
+                                <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color: rgb(250, 90, 90); padding-left: 5px;"></i> 14개</div>
+                                <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;" ></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                                <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                </div> 
+                </div>
+<div  class="allreviewbutton"><a href="" >모든 리뷰 보기 > </a></div>
+            
+            </div>
+
+
+            
+
+
+
+
+<div class="footer"><footer>
+    여기는 푸터 공간입니다
+</footer></div>
+<script src="../js/review.js"></script>
+</body>
+</html>
