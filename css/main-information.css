@@ -32,8 +32,9 @@
     padding-right: 15dvh;
     padding-top: 3dvh;
     padding-bottom: 3dvh;
-    color: black;
+    /* color: black; */
   }
+
   .nav1 li:hover{
     background-color: rgb(235, 69, 69);
     color: white;
@@ -58,9 +59,16 @@
   .nav1 , .nav2{
     list-style-type: none;
   }
+  .nav-info{
+    background-color: rgb(235, 69, 69);
+    color: white;
+  }
+  .nav-star{
+    color: black;
+  }
   .grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .item img{
@@ -69,7 +77,6 @@
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    
   }
   .item{
     position: relative;
@@ -83,7 +90,7 @@
     height: 250px;
     background: black;
     z-index: 10;
-    top: 1px;
+    top: 0px;
     opacity: 0;
     color: white;
     border-radius: 20px;
@@ -145,7 +152,7 @@
 }
 
 /* ------------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 426px){
+@media screen and (max-width: 1024px) and (min-width: 427px){
 body {
   margin: 0;
   padding: 0;
@@ -179,7 +186,7 @@ body {
   padding-right: 15dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
-  color: black;
+  /* color: black; */
 }
 .nav1 li:hover{
   background-color: rgb(235, 69, 69);
@@ -204,6 +211,13 @@ body {
 }
 .nav1 , .nav2{
   list-style-type: none;
+}
+.nav-info{
+  background-color: rgb(235, 69, 69);
+  color: white;
+}
+.nav-star{
+  color: black;
 }
 .grid{
   display: grid;
@@ -230,7 +244,7 @@ body {
   height: 200px;
   background: black;
   z-index: 10;
-  top: 1px;
+  top: 0px;
   opacity: 0;
   color: white;
   border-radius: 20px;
@@ -321,7 +335,7 @@ body {
   padding-right: 15dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
-  color: black;
+  /* color: black; */
 }
 .nav1 li:hover{
   background-color: rgb(235, 69, 69);
@@ -347,6 +361,13 @@ body {
 .nav1 , .nav2{
   list-style-type: none;
 }
+.nav-info{
+  background-color: rgb(235, 69, 69);
+  color: white;
+}
+.nav-star{
+  color: black;
+}
 .grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -371,7 +392,7 @@ body {
   height: 250px;
   background: black;
   z-index: 10;
-  top: 1px;
+  top: 0px;
   opacity: 0;
   color: white;
   border-radius: 20px;

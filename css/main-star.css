@@ -32,7 +32,7 @@
     padding-right: 15dvh;
     padding-top: 3dvh;
     padding-bottom: 3dvh;
-    color: black;
+    /* color: black; */
   }
   .nav1 li:hover{
     background-color: rgb(235, 69, 69);
@@ -57,6 +57,13 @@
   }
   .nav1 , .nav2{
     list-style-type: none;
+  }
+  .nav-info{
+    color: black;
+  }
+  .nav-star{
+    color: white;
+    background-color: rgb(235, 69, 69);
   }
   .grid{
     display: grid;
@@ -83,7 +90,7 @@
     height: 250px;
     background: black;
     z-index: 20;
-    top: 1px;
+    top: 0px;
     opacity: 0;
     color: white;
     border-radius: 20px;
@@ -182,7 +189,7 @@
 
 
 /* ------------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 426px){
+@media screen and (max-width: 1024px) and (min-width: 427px){
 body {
   margin: 0;
   padding: 0;
@@ -216,7 +223,7 @@ body {
   padding-right: 15dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
-  color: black;
+  /* color: black; */
 }
 .nav1 li:hover{
   background-color: rgb(235, 69, 69);
@@ -241,6 +248,13 @@ body {
 }
 .nav1 , .nav2{
   list-style-type: none;
+}
+.nav-info{
+  color: black;
+}
+.nav-star{
+  color: white;
+  background-color: rgb(235, 69, 69);
 }
 .grid{
   display: grid;
@@ -267,7 +281,7 @@ body {
   height: 250px;
   background: black;
   z-index: 20;
-  top: 1px;
+  top: 0px;
   opacity: 0;
   color: white;
   border-radius: 20px;
@@ -412,7 +426,7 @@ body {
   padding-right: 15dvh;
   padding-top: 3dvh;
   padding-bottom: 3dvh;
-  color: black;
+  /* color: black; */
 }
 .nav1 li:hover{
   background-color: rgb(235, 69, 69);
@@ -438,6 +452,13 @@ body {
 .nav1 , .nav2{
   list-style-type: none;
 }
+.nav-info{
+  color: black;
+}
+.nav-star{
+  color: white;
+  background-color: rgb(235, 69, 69);
+}
 .grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -462,7 +483,7 @@ body {
   height: 250px;
   background: black;
   z-index: 20;
-  top: 1px;
+  top: 0px;
   opacity: 0;
   color: white;
   border-radius: 20px;
