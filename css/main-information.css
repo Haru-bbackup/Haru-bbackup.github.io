@@ -1,4 +1,4 @@
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1215px){
   body {
     margin: 0;
     padding: 0;
@@ -77,6 +77,7 @@
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    min-width: 180px;
   }
   .item{
     position: relative;
@@ -152,7 +153,7 @@
 }
 
 /* ------------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 427px){
+@media screen and (max-width: 1215px) and (min-width: 800px){
 body {
   margin: 0;
   padding: 0;
@@ -221,7 +222,7 @@ body {
 }
 .grid{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 
 .item img{
@@ -302,7 +303,7 @@ body {
 }
 }
 /* ------------------------------------------------------------------- */
-@media screen and (max-width: 426px){
+@media screen and (max-width: 800px){
 body {
   margin: 0;
   padding: 0;
@@ -417,17 +418,17 @@ body {
 }
 #carousel-container, #carousel-container2{
   visibility: hidden;
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
 }
 #carousel, #carousel2{
   visibility: hidden;
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
 }
 .carousel-item{
   visibility: hidden;
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
 }
 }

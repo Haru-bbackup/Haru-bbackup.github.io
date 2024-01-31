@@ -1,4 +1,4 @@
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1215px){
   body {
     margin: 0;
     padding: 0;
@@ -189,7 +189,7 @@
 
 
 /* ------------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 427px){
+@media screen and (max-width: 1215px) and (min-width: 800px){
 body {
   margin: 0;
   padding: 0;
@@ -393,7 +393,7 @@ body {
 }
 }
 /* ------------------------------------------------------------------- */
-@media screen and (max-width: 426px){
+@media screen and (max-width: 800px){
 body {
   margin: 0;
   padding: 0;
