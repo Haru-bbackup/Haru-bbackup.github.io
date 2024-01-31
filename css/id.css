@@ -71,6 +71,12 @@
     flex-direction: column;
     width: 90%;
   }
+  .email-border{
+    width: 120%;
+  }
+  .number-border{
+    width: 120%;
+  }
 }
 
 .submit{

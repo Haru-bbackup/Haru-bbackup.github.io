@@ -122,10 +122,27 @@
   
   .name-sex{
     flex-direction: column;
+    align-items: center;
+  }
+  .name, .menu{
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .index-menu{
     margin-left: 50px;
+    width: 80%;
+  }
+  .id{
+    width: 90%;
+  }
+  .password, .password-chec{
+    width: 90%;
+  }
+  .name{
+    width: 100%;
+  }
+  .email-box{
+    width: 90%;
   }
 }

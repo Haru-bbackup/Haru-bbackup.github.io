@@ -59,6 +59,7 @@ a{
   color: black;
 }
 
+
 @media screen and (min-width:320px) and (max-width:425px) {
   .mid{
     display: none;
@@ -110,7 +111,7 @@ a{
     font-size: 25px;
   }
   .mid{
-    width: 400%;
+    width: 100%;
   }
 }
 
