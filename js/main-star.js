@@ -25,7 +25,7 @@ function executeRating(stars, result) {
 }
 
 function printRatingResult(result, num = 0) {
-   result.textContent = `${num}/10`;
+   // result.textContent = `${num}/10`;
 }
 
 executeRating(ratingStars, ratingResult);
@@ -73,7 +73,7 @@ const carousel2 = document.getElementById('carousel2');
     }
   
     
-    setInterval(nextSlide2, 5000);
+    setInterval(nextSlide2, 2000);
   
   
     updateCarousel2();
