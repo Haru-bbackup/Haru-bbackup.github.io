@@ -59,7 +59,6 @@ function handleClick(buttonType) {
 
     if (!isUserLoggedIn) {
     alert("로그인이 필요합니다");
-// 로그인 페이지 링크 추가!!!!!
     } else {
     switch (buttonType) {
         case 'bookmark':
