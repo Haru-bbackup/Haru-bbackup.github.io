@@ -1,0 +1,148 @@
+*{
+  margin: 0px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.signup{
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  height: auto;
+  width: auto;
+}
+
+.signup a{
+  color: black;
+}
+
+.id-input, .password-input, .password-checkbox{
+  display: flex;
+  height: 40px;
+  width: 400px;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.name{
+  display: flex;
+  height: 40px;
+  width: auto;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 260px;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.input-date{
+  border: none;
+  padding: 0px 15px 0px 0px;
+}
+
+
+.email{
+  display: flex;
+  height: 40px;
+  width: 400px;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.name-sex{
+  display: flex;
+  flex-direction: row;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button{
+  width: 120px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid;
+}
+
+@media screen and (max-width:426px) {
+  .header{
+    width: 100%;
+  }
+  .signup{
+    width: 100%;
+  }
+  .password, .password-input{
+    width: 100%;
+  }
+  .password-checkbox{
+    width: 100%;
+  }
+  .name{
+    width: 70%;
+  }
+  .menu{
+    width: 100%;
+  }
+  .email{
+    width: 100%;
+  }
+  .submit{
+    width: 100%;
+  }
+  .id-input{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  
+  .name-sex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .name, .menu{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .index-menu{
+    margin-left: 50px;
+    width: 80%;
+  }
+  .id{
+    width: 90%;
+  }
+  .password, .password-chec{
+    width: 90%;
+  }
+  .name{
+    width: 100%;
+  }
+  .email-box{
+    width: 90%;
+  }
+}

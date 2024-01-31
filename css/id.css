@@ -1,0 +1,96 @@
+*{
+  margin: 0px
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-date, .name, .id-input, .number{
+  display: flex;
+  height: 40px;
+  width: 230px;
+  border: 1px solid;
+  border-color:black;
+  border-radius: 80px;
+  margin: 10px;
+}
+
+.main-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  font-family: 'Sunflower', sans-serif;
+}
+
+.main-header a{
+  color: black;
+}
+
+/* .email-sec, .number-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.email-border, .number-border{
+  border: 1px solid;
+  border-radius: 7%;
+  padding: 15px 15px;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.email-box, .number-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width:425px) {
+  .email-border, .number-border{
+    width: 100%;
+  }
+  .id-input, .input-date, .name, .number{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:425px) and (min-width:320px) {
+  .header{
+    flex-direction: column;
+    width: 90%;
+  }
+  .email-border{
+    width: 120%;
+  }
+  .number-border{
+    width: 120%;
+  }
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button{
+  width: 120px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid;
+}
+
+.submit h3{
+  font-family: 'Sunflower', sans-serif;
+}
