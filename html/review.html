@@ -15,9 +15,14 @@
 </head>
 <body>
         <div class="header"> 여기는 헤더구간입니다 </div>
-        <div class="screen">
-            <img src="../img/sge/AstarIsBorn.jpg" alt="" width="900px" >
-
+        <div class="bodycontents">
+            <div class="imagecontainer">
+                <img src="../img/sge/AstarIsBorn.jpg" alt="" width="900px"  style="opacity: 0.8;">
+                <div class="imagetext">스타이즈 본 <br> 
+                    <span class="smalltitile">A star is born 2018 </span><br>
+                    <span class="titlerate"><i class="fa-solid fa-circle" style="color: #0ca678;"></i>&ensp; 94.04%</span>
+                </div>
+            </div>
         
                 <button id="button1"><i class="fa-regular fa-thumbs-down fa-xl" ></i> &emsp; 별로에요
                 </button >
@@ -25,10 +30,10 @@
 
             <nav>
                 <ul>
-                    <li><a href=""  onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
-                    <li><a href=""  onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
-                    <li><a href=""  onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
-                    <li><a href=""  onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
+                    <li><a onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
+                    <li><a onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
+                    <li><a onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
+                    <li><a onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
                 </ul>
 
             </nav>
@@ -97,7 +102,7 @@
 
                 </div> 
                 </div>
-<div  class="allreviewbutton"><a href="" >모든 리뷰 보기 > </a></div>
+<div  class="allreviewbutton"><a >모든 리뷰 보기 > </a></div>
             
             </div>
 

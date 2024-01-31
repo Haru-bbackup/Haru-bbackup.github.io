@@ -12,12 +12,30 @@ a:hover { color: blue; }
 /* a:active { color: red; } */
 
 
-.screen{
+.bodycontents{
     width: 900px; height: 1000px;
     margin: 0 auto;
     position: relative;
 }
+.imagecontainer {
+    position: relative;
+    width: 900px; /* Set the width to match the image width */
+}
 
+.imagetext {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 27px; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    /* Add any additional styles as needed */
+}
+
+.smalltitile{font-size: 22px; font-weight: lighter;}
+.titlerate{font-size: 26px; color: #0CA678; font-weight: 800; padding-top: 4px;}
 
 nav ul{list-style: none; display: flex;}
 nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: center; align-items: center;}
