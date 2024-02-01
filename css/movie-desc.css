@@ -11,6 +11,7 @@ body {
 /* top 클래스 안의 설명 부분 */
 #mov_info {
   text-align: center; /* 텍스트를 가운데 정렬 */
+  padding-top: 10px;
   padding-bottom: 20px;
   color: darkgrey;
   font-size: 18px;
@@ -18,13 +19,24 @@ body {
 
 /* content 부분 안의 메인 설명 부분 */
 .story_main {
+  text-align: center;
+  justify-content: center;
   padding-bottom: 20px;
   color: darkgrey;
 }
 
-/* .carousel-container-button {
+.carousel_prev {
+  display: inline-block;
+}
 
-} */
+.carousel_next {
+  display: inline-block;
+}
+
+.carousel-cotainer-button { 
+  padding-top: 10px;
+  text-align: center; 
+}
 
 .carousel_prev {
   background-color: rgba(0, 0, 0, 0.3);

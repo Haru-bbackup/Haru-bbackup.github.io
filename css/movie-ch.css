@@ -33,8 +33,14 @@ body{
   color: black;
 }
 #hand:hover{
-  transform: scale(2x);
+  transform: scale3d(2,2,2);
+  transform: rotateX(360deg);
+  transition-duration: 2s;
 }
+#share:hover{
+  transform: scale3d(2,2,2);
+}
+
 
 /* 최소 425px 이상인 경우 미디어쿼리 */
 @media screen and (min-width: 425px) {
@@ -136,7 +142,7 @@ img {
   width: 82%;
   margin-right: 0;
 }
-
+@media screen and (min-width: 426px){
 .movie-jungle{
   text-align: center;
   background-color: rgb(232, 226, 226);
@@ -147,7 +153,7 @@ img {
   /* width: 100%; */
   opacity: 0.8;
 }
-
+}
 .nav1 {
   text-align: center;
   padding: 0;
@@ -220,15 +226,63 @@ img {
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .carousel-container {
   max-width: 100%; /* 화면 크기에 맞게 조절 */
+  height: 300px;
+  }
+
+  .movie-jungle{
+    text-align: center;
+    background-color: rgb(232, 226, 226);
+    position: relative;
+    z-index: 10;
+    /* top: 163px; */
+    /* left: 20%; */
+    /* width: 100%; */
+    /* opacity: 0.8; */
+    align-items: center;
+  }
+  .background{
+    position: relative;
+    /* opacity: 0.9; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(1,1fr); */
+    padding-bottom: 0px;
+    width: 82%;
+    margin-right: 0;
+  }
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .carousel-img{
+    background-size: 1100px;
+    height: 300px;
+  }
+  .vid{
+    width: 400px;
+    height: 300px;
   }
 }
 
 
-@media screen and (min-width:425px) {
+@media screen and (min-width:426px) {
   .poster_img {
   min-width: 425px;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 426px) {
+  
+  .like{
+    width: 0;
+    height: 0;
+    visibility: hidden;
   }
 }
