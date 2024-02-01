@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>영화 상세 정보</title>
   <link rel="stylesheet" href="../css/movie-desc.css">
+  <script src="https://kit.fontawesome.com/0db48d7194.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- 구성 : 포스터 사진, 영화 설명, 이미지 슬라이더, 동영상 -->  
-    <div class="main">
       <!-- 영화 관련 이미지 슬라이더 -->
       <div class="carousel-container">
         <div class="carousel-slide">
@@ -19,12 +19,22 @@
           <img class="carousel-img" src="../img/desc/movie_slide4.jpeg">
           <img class="carousel-img" src="../img/desc/movie_slide1.jpg" id="firstClone">
         </div>
+      </div>      
+
+      <!-- <button id="prevBtn">Prev</button> -->
+      <!-- <button id="nextBtn">Next</button> -->
+
+      <div class="carousel-cotainer-button">
+          <button type="button" class="carousel_prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" class="carousel_next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
       </div>
-      <button id="prevBtn">Prev</button>
-      <button id="nextBtn">Next</button>
   
-      <!-- 상단 -->
-      <div class="top">
+      <!-- 메인 -->
+      <div class="main">
         <div id="mov_info">
           <p class="tit">소풍</p>
           <p class="tit_eng">					
@@ -33,7 +43,7 @@
           <p class="sub_info">
             <span>2023</span>
             <span>한국</span>
-            <span class="grade002">12세이상관람가</span>
+            <span class="grade">12세이상관람가</span>
           </p>
           <p class="sub_info">
             <span>개봉일 : 2024-02-07</span>
@@ -45,6 +55,14 @@
           <p class="sub_info"> 
             <span>출연 :나문희(고은심), 김영옥(진금순)</span>
           </p>
+        </div>
+
+        <!-- 좋아요 공유 버튼 -->
+        <div class="like">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <a href="#"><span style="padding : 5px;">좋아요</span></a>
+          <i class="fa-solid fa-share"></i>
+          <a href="#"><span>공유하기</span></a>
         </div>
       </div>
   
