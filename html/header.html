@@ -5,18 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/header.css">
+  <script src="../js/desc-carousel.js"></script>
+  <script src="../js/desc-toggle.js"></script>
 </head>
-
 <body>
   <header class="header">
     <div class="top">
       <a href="../html/main-informain.html" target="main">
-        <i class=""></i>
-        <h3>홈페이지</h3>
+        <img src="http://image.cine21.com/www1/common/logo.png" alt="씨네21">
       </a>
     </div>
     <div class="mid">
-      <img src="../img/header/header.png"></img>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img class="carousel-img" src="../img/header/img header.jpeg" id="lastClone">
+          <img class="carousel-img" src="../img/header/img header02.jpeg">
+          <img class="carousel-img" src="../img/header/img header03.jpeg">
+          <img class="carousel-img" src="../img/header/img header04.jpeg" id="firstClone">
+        </div>
+      <!-- <div class="carousel-cotainer-button"> -->
+        <button type="button" class="carousel_prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button type="button" class="carousel_next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+  </div>
     </div>
     <div class="end">
       <a href="../html/log-in.html" target="main"><h5>로그인</h5></a>
