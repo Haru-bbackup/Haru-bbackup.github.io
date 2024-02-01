@@ -77,3 +77,18 @@ function handleClick(buttonType) {
 function goBack() {
     window.history.back();
 }
+
+// 좋아요 싫어요 버튼클릭
+	function change_btn(e) {
+	var btns = document.querySelectorAll(".button1");
+	btns.forEach(function (btn, i) {
+		if (e.currentTarget == btn) {
+	btn.classList.add("active");
+		} else {
+		btn.classList.remove("active");
+		}
+	});
+	console.log(e.currentTarget);
+	}	
+
+

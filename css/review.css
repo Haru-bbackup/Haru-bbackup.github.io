@@ -37,9 +37,11 @@ a:hover { color: blue; }
 .smalltitile{font-size: 22px; font-weight: lighter;}
 .titlerate{font-size: 26px; color: #0CA678; font-weight: 800; padding-top: 4px;}
 
+.icon-container2{margin: 0 auto; font-size: 15px;  align-items: center; vertical-align: center; position: relative;;}
+
 nav ul{list-style: none; display: flex;}
 nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: center; align-items: center;}
-.container{background-color: rgb(242, 242, 242); width: 900px; display: inline-block; position: relative;}
+.container{background-color: rgb(255, 255, 255); width: 900px; display: inline-block; position: relative;}
 .item1{height: 35px; margin-bottom: 0px; padding-top: 18px; padding-bottom: 2px; font-size: 23px; font-weight: 700;}
 .item2{height: 150px;}
 .item3{height: 35px; margin-top: 150px; margin-bottom: 0px; font-size: 23px; font-weight: 700;}
@@ -53,8 +55,19 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 }
 
 /* 좋아요 싫어요 버튼 */
-#button1{  width: 440px; border: none; text-align: center; border-radius: 5px; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color: white;  float: left; background-color: #6a7a95;  }
-#button2{  width: 440px; border: none; text-align: center; border-radius: 5px; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color: white; float: right; margin-right: 0px; background-color: #6a7a95}
+.button{  width: 440px; border: none; text-align: center; border-radius: 5px; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color:black;  float: left; background-color: #b8b8b9;  }
+
+.button:hover,
+.button.active {	
+		background: #4264eb;
+		color: #fff; 
+}
+
+.button:visited { background: #4264eb; 
+				color: #fff;
+
+}
+
 
 
 
@@ -209,6 +222,7 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 /* 모든 리뷰 보기 */
 .allreviewbutton{font-weight: 450; font-size: 18px; text-align: center;  padding: 17px; margin-top: 5px; margin-bottom: 5px;}
 .commentshare{padding: 5px; margin-top: 5px; margin-bottom: 5px;color: #555;}
+.reviewyear{font-size: 14px; display: flex; justify-content: flex-end;}
 
 
 /* 카카오톡 버튼 */
@@ -227,7 +241,7 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 .otherwaybutton{ display: flex;
     text-align: center; justify-content: center; 
     margin: 0 auto;
-    background-color: #4263eb; width: 300px;g height: 50px; padding: 0px 4px; 
+    background-color: #4263eb; width: 300px; height: 50px; padding: 0px 4px; 
     border: none; border-radius: 8px;
     flex-direction: row;
     line-height: 48px;
