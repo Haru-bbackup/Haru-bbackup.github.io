@@ -59,7 +59,8 @@ function handleClick(buttonType) {
 
     if (!isUserLoggedIn) {
     alert("로그인이 필요합니다");
-    } else {
+    window.location.href = "../html/log-in.html"
+} else {
     switch (buttonType) {
         case 'bookmark':
         break;
@@ -72,3 +73,22 @@ function handleClick(buttonType) {
         default:
         break;
 }}}
+
+function goBack() {
+    window.history.back();
+}
+
+// 좋아요 싫어요 버튼클릭
+	function change_btn(e) {
+	var btns = document.querySelectorAll(".button1");
+	btns.forEach(function (btn, i) {
+		if (e.currentTarget == btn) {
+	btn.classList.add("active");
+		} else {
+		btn.classList.remove("active");
+		}
+	});
+	console.log(e.currentTarget);
+	}	
+
+

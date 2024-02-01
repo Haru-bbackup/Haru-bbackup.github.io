@@ -14,21 +14,28 @@
 
 </head>
 <body>
-        <div class="header"> 여기는 헤더구간입니다 </div>
-        <div class="screen">
-            <img src="../img/sge/AstarIsBorn.jpg" alt="" width="900px" >
+    <iframe src="../html/header.html" frameborder="0" width="100%" height="100%"></iframe>
 
+        <div class="bodycontents">
+            <div class="imagecontainer">
+                <img src="../img/sge/AstarIsBorn.jpg" alt="" width="900px"  style="opacity: 0.8;">
+                <div class="imagetext" >스타이즈 본 <br> 
+                    <span class="smalltitile" style="margin-top: 0; padding-top: 0;">A star is born 2018 </span><br>
+                    <span class="titlerate"><i class="fa-solid fa-circle" style="color: #0ca678; padding-top: 20px;"></i>&ensp; 94.04%</span>
+                    <div class="icon-container2" ><img src="../img/sge/free-icon-tomato-590779.png" alt=""><span>90 %</span><img src="../img/sge/free-icon-imdb-5977585 (2).png " alt="" style="padding-top: 5px; "><span>7.6</span>&ensp; <i class="fa-solid fa-star" style="color: #ffffff;"></i> 3.8</div>
+                </div>
+            </div>
         
-                <button id="button1"><i class="fa-regular fa-thumbs-down fa-xl" ></i> &emsp; 별로에요
+                <button type="button" class="button" onclick="change_btn(e)"><i class="fa-regular fa-thumbs-down fa-xl" ></i> &emsp; 별로에요
                 </button >
-                <button id="button2"><i class="fa-regular fa-thumbs-up fa-xl" ></i> &emsp; 좋아요</button>
+                <button type="button" class="button" onclick="change_btn(e)" style="margin-left: 18px;"><i class="fa-regular fa-thumbs-up fa-xl" ></i> &emsp; 좋아요</button>
 
             <nav>
                 <ul>
-                    <li><a href=""  onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
-                    <li><a href=""  onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
-                    <li><a href=""  onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
-                    <li><a href=""  onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
+                    <li><a onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
+                    <li><a onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
+                    <li><a onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
+                    <li><a onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
                 </ul>
 
             </nav>
@@ -63,6 +70,20 @@
                 <div class="item3"><p>모든 리뷰</p></div>
                 <div class="item4" id="scroll">
                     <div class="contentwrap1">
+                        <a href="" style="font-weight: 700;">차은우 <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 4.5</span></a>
+                        <p>현대적 감각을 탑재한 고전적 리메이크
+                            1937년 윌리엄 A. 윌먼의 <스타 탄생> 이후 세 번째 리메이크 작품인 <스타 이즈 본>이 개봉했다. 원래 클린트 이스트우드가 연출을 맡고 비욘세를 주연으로 추진되었던 이 프로젝트는 결국 브래들리 쿠퍼의 연출 데뷔작으로 제작되었다. 주연은 쿠퍼와 함께 레이디 가가가 함께 하게 되었다. 이번 영화는 여러 영화와 드라마에 조연 혹은 카메오로 출연해온 레이디 가가의 첫 주연작이기도 하다. 브래들리 쿠퍼의 <스타 이즈 본>은 할리우드 스타가 아닌 팝스타를 주인공으로 한다. 천부적인 재능을 가졌지만 웨이트리스 일을 하며 바에서 간간히 공연하는 앨리(레이디 가가)는 우연히 바를 찾은 잭슨 메인(브래들리 쿠퍼)을 만나게 된다. 앨리의 목소리에 반한 잭슨은 자신의 공연에 앨리를 초대하고, 앨리의 자작곡을 함께 부른다. 공연 영상이 유튜브에 올라가자 앨리는 한순간에 스타가 되고, 앨리는 잭슨의 투어에 함께하며 둘은 사랑에 빠진다. 그러던 중 앨리의 가능성을 알아본 음반 제작자 레즈(라피 가브론)가 음반 계약을 제안하고, 앨리는 팝스타가 된다
+                            <section id="testSection">
+                                스타 이즈 본은 제목처럼 한 스타의 탄생과 관련된 이야기다. 스타였던 남자와 무명이 여자의 음악 및 관계가 펼쳐진다. 음악으로 시작해 음악으로 끝나는 영화로 <스타 이즈 본>의 노래는 인물들의 상황, 감정, 내면이 담긴 제2의 대사로서 기능하고 있다. 이런 음악을 자주 들을 수 있는 덕에 진한 감동이 끝없이 귀로 쏟아지며, 레이디 가가라는 걸출한 가수 덕에 콘서트를 감상하는 듯한 즐거움도 있다.
+                                하지만 노래의 사용 빈도가 잦아, 후반부로 갈수록 노래에 큰 흥미를 갖지 못할 수도 있다. 혹은, 음악이 없는 장면이 심심하게 느껴질 수도 있다. 클린트 이스트우드 감독이라면, 음악의 사용을 좀 더 절제하는 방향을 택했을 것 같다. 노래에서 오는 감동을 줄이는 대신, 음악 없는 장면의 힘을 더 높이면서 인물에게 더 관심을 가지려 하지 않았을까. 잭슨(브래들리 쿠퍼)의 혼란과 갈등이 술과 술주정으로 단편적으로 표현될 뿐, 그 알코올을 뚫고서 내면을 깊게 바라볼 기회가 잘 없던 것 같다. 지금도 나쁘지 않지만, 음악이 아닌 인물과 이야기만으로도 관객을 좀 더 흔들 수 있었을 것 같아 아쉽다.
+                            </section>
+                            <button id="testButton">더보기</button></p>
+                        <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color: rgb(250, 90, 90); padding-left: 5px;"></i> 14개</div>
+                        <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;" ></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                        <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                    <div class="contentwrap1">
                         <a href="" style="font-weight: 700;">MarkVill <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 3.5 </a>
                         <p>난 당신과 달라요. 그것이 당신을 덜 사랑한다는 말을 아니에요</p><br>
                         <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color:rgb(250, 90, 90); padding-left: 5px;"></i> 10개</div>
@@ -78,6 +99,7 @@
                             <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;"></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
                             <hr class="divider" style="margin: 0px 0px 8px ;">
                     </div>
+
                     <div class="contentwrap1">
                                 <a href="" style="font-weight: 700;">gracias09 <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 4.5</span></a>
                                 <p>영화 제목에 담긴 태도와 의미
@@ -96,19 +118,13 @@
 
                 </div> 
                 </div>
-<div  class="allreviewbutton"><a href="" >모든 리뷰 보기 > </a></div>
+<div  class="allreviewbutton"><a >모든 리뷰 보기 > </a></div>
             
             </div>
 
 
-            
-
-
-
-
-<div class="footer"><footer>
-    여기는 푸터 공간입니다
-</footer></div>
+        
+<iframe src="../html/footer.html" frameborder="0" width="100%" height="100%" class="iframe-end" ></iframe>
 <script src="../js/review.js"></script>
 </body>
 </html>
