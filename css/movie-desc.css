@@ -18,6 +18,8 @@ body {
 
 /* content 부분 안의 메인 설명 부분 */
 .story_main {
+  text-align: center;
+  justify-content: center;
   padding-bottom: 20px;
   color: darkgrey;
 }
