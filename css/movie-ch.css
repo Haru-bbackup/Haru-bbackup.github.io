@@ -33,8 +33,14 @@ body{
   color: black;
 }
 #hand:hover{
-  transform: scale(2x);
+  transform: scale3d(2,2,2);
+  transform: rotateX(360deg);
+  transition-duration: 2s;
 }
+#share:hover{
+  transform: scale3d(2,2,2);
+}
+
 
 /* 최소 425px 이상인 경우 미디어쿼리 */
 @media screen and (min-width: 425px) {
