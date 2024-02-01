@@ -12,16 +12,34 @@ a:hover { color: blue; }
 /* a:active { color: red; } */
 
 
-.screen{
-    width: 900px; height: 1000px;
+.bodycontents{
+    width: 900px; 
     margin: 0 auto;
+    /* position: relative; */
+}
+.imagecontainer {
     position: relative;
+    width: 900px; /* Set the width to match the image width */
 }
 
+.imagetext {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 27px; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    text-align: left; /* Center-align the text */
+    /* Add any additional styles as needed */
+}
+
+.smalltitile{font-size: 22px; font-weight: lighter;}
+.titlerate{font-size: 26px; color: #0CA678; font-weight: 800; padding-top: 4px;}
 
 nav ul{list-style: none; display: flex;}
 nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: center; align-items: center;}
-.container{background-color: rgb(242, 242, 242); width: 900px; display: inline-block;}
+.container{background-color: rgb(242, 242, 242); width: 900px; display: inline-block; position: relative;}
 .item1{height: 35px; margin-bottom: 0px; padding-top: 18px; padding-bottom: 2px; font-size: 23px; font-weight: 700;}
 .item2{height: 150px;}
 .item3{height: 35px; margin-top: 150px; margin-bottom: 0px; font-size: 23px; font-weight: 700;}
@@ -209,7 +227,7 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 .otherwaybutton{ display: flex;
     text-align: center; justify-content: center; 
     margin: 0 auto;
-    background-color: #4263eb; width: 300px; height: 50px; padding: 0px 4px; 
+    background-color: #4263eb; width: 300px;g height: 50px; padding: 0px 4px; 
     border: none; border-radius: 8px;
     flex-direction: row;
     line-height: 48px;

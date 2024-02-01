@@ -59,7 +59,8 @@ function handleClick(buttonType) {
 
     if (!isUserLoggedIn) {
     alert("로그인이 필요합니다");
-    } else {
+    window.location.href = "../html/log-in.html"
+} else {
     switch (buttonType) {
         case 'bookmark':
         break;
@@ -72,3 +73,7 @@ function handleClick(buttonType) {
         default:
         break;
 }}}
+
+function goBack() {
+    window.history.back();
+}
