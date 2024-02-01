@@ -251,47 +251,28 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
     margin-top: 15px; margin-bottom: 30px;
 }
 
-/* 영화 이미지 캐러셀 */
-.carousel-mvcontainer{
-    width: 100%;
-    height: 557.07px;
-    margin: auto;
+#carousel-container{
+    float: left;
+}
+#carousel-container2{
+    float: right;
+}
+#carousel-container, #carousel-container2{
+    width: 15%;
     overflow: hidden;
-    position: relative;
 }
-.carousel-mvslide{
-    position: absolute;
+#carousel-container img, #carousel-container2 img{
+    width: 15vw;
+}
+#carousel {
     display: flex;
-    width: calc(100%*5);
-    height: 557.07px;
-
-
+    transition: transform 1s ease-in-out;
+}
+  #carousel2 {
+    display: flex;
+    transition: transform 1s ease-in-out;
 }
 
-.carousel-mvimg{ 
-    width: 100%; 
-    height: 557.07px;
+.carousel-item {
+    width: 100%;
 }
-
-.carousel_prev {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; */
-}
-
-.carousel_next {
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; */
-}
-
