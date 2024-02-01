@@ -37,7 +37,7 @@ a:hover { color: blue; }
 .smalltitile{font-size: 22px; font-weight: lighter;}
 .titlerate{font-size: 26px; color: #0CA678; font-weight: 800; padding-top: 4px;}
 
-.icon-container2{margin: 0 auto; font-size: 15px;  align-items: center; vertical-align: center; position: relative;;}
+.icon-container2{margin: 0 auto; font-size: 15px;  align-items: center; vertical-align: center; position: relative; display: flex; justify-content: flex-start;}
 
 nav ul{list-style: none; display: flex;}
 nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: center; align-items: center;}
@@ -55,12 +55,12 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 }
 
 /* 좋아요 싫어요 버튼 */
-.button{  width: 440px; border: none; text-align: center; border-radius: 5px; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color:black;  float: left; background-color: #b8b8b9;  }
+.button{  width: 440px; border: none;border-color: #333; text-align: center; border-radius: 5px; padding-top: 12px; padding-bottom: 12px; font-size: 16px; color:black;  float: left; background-color: #d6d6d6;  }
 
 .button:hover,
 .button.active {	
 		background: #4264eb;
-		color: #fff; 
+		color: white; 
 }
 
 .button:visited { background: #4264eb; 
@@ -88,6 +88,7 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 }
 #reviewButton:hover {
 	background-color:#0061a7;
+    color: #ffe900;
 }
 #reviewButton:active {
 	position:relative;
@@ -252,3 +253,28 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
     margin-top: 15px; margin-bottom: 30px;
 }
 
+#carousel-container{
+    float: left;
+}
+#carousel-container2{
+    float: right;
+}
+#carousel-container, #carousel-container2{
+    width: 15%;
+    overflow: hidden;
+}
+#carousel-container img, #carousel-container2 img{
+    width: 15vw;
+}
+#carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+  #carousel2 {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+}
