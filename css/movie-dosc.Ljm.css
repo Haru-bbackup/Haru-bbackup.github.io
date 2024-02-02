@@ -11,41 +11,41 @@ body {
 /* top 클래스 안의 설명 부분 */
 #mov_info {
   text-align: center; /* 텍스트를 가운데 정렬 */
+  padding-top: 10px;
   padding-bottom: 20px;
   color: darkgrey;
   font-size: 18px;
-
 }
 .tit{
-  text-decoration: underline;
-  font-family: 'NanumGothicCodingLigature';
-  font-size: x-large;
+  font-family: 'NanumGothicCoding';
   color: black;
+}
+.story1{
+  font-family: 'NanumGothicCoding';
+  color: black;
+  text-decoration: underline;
 }
 
 /* content 부분 안의 메인 설명 부분 */
 .story_main {
+  text-align: center;
+  justify-content: center;
   padding-bottom: 20px;
   color: darkgrey;
 }
-.story1{
-  text-decoration: underline;
-  font-family: 'NanumGothicCodingLigature';
-  color: black;
-}
-#text_more{
-  padding: 10px;
+
+.carousel_prev {
+  display: inline-block;
 }
 
-.bodysize{
-  background-repeat : no-repeat;
-  background-size : cover;
+.carousel_next {
+  display: inline-block;
 }
 
-
-/* .carousel-container-button {
-
-} */
+.carousel-cotainer-button { 
+  padding-top: 10px;
+  text-align: center; 
+}
 
 .carousel_prev {
   background-color: rgba(0, 0, 0, 0.3);
@@ -72,7 +72,7 @@ body {
 
 .grade {
   color: black;
-  background-color: rgb(249, 184, 70);
+  background-color: rgb(65, 183, 236);
   font-size: 16px;
   padding-left: 4px;
   padding-right: 4px;
@@ -88,15 +88,6 @@ body {
 .like {
   padding: 2px;
   text-align: center;
-}
-
-.trailer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
 }
 
 
@@ -168,6 +159,10 @@ img {
 @media screen and (max-width: 425px) {
   .carousel-container {
   max-width: 100%; /* 화면 크기에 맞게 조절 */
+  }
+  .iframe{
+    width: 100%;
+    height: 100%;
   }
 }
 
