@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/review.css">
+
+    <style>@media screen and ( max-width: 420px){}</style>
+    <!-- 폰트어썸 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+</head>
+<body>
+    <iframe src="../html/header.html" frameborder="0" width="100%" height="100%"></iframe>
+
+    <div id="carousel-container">
+        <div id="carousel">
+        <div class="carousel-item"> 
+            <img src="/img/main/ad/ad5.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/main/ad/ad6.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/main/ad/ad4.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <div id="carousel-container2">
+        <div id="carousel2">
+        <div class="carousel-item"> 
+            <img src="/img/main/ad/ad1.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/main/ad/ad2.jpg" alt="">
+        </div>
+        </div>
+    </div>
+
+        <div class="bodycontents">
+            <div class="imagecontainer">
+                <img src="../img/sge/picnic.jpg" alt="" width="900px"  style="opacity: 0.8;">
+                <div class="imagetext" > 소풍 <br> 
+                    <span class="smalltitile" style="margin-top: 0; padding-top: 0;">PLAN 2024 </span><br>
+                    <span class="titlerate"><i class="fa-solid fa-circle" style="color: #0ca678; padding-top: 20px;"></i>&ensp;94.04%</span>
+                    <div class="icon-container2" >
+                        <img src="../img/sge/free-icon-tomato-590779.png" alt="">
+                        <span> &ensp;90 %&ensp;</span>
+                        <img src="../img/sge/free-icon-imdb-5977585 (2).png "  >
+                        <span>&ensp;7.6&ensp;</span>&ensp; <i class="fa-solid fa-star" style="color: #ffffff;"></i>&ensp;3.8&ensp;</div>
+                    </div>
+                </div>
+        
+                <button type="button" class="button" onclick="change_btn(e)"><i class="fa-regular fa-thumbs-down fa-xl" ></i> &emsp; 별로에요
+                </button >
+                <button type="button" class="button" onclick="change_btn(e)" style="margin-left: 18px;"><i class="fa-regular fa-thumbs-up fa-xl" ></i> &emsp; 좋아요</button>
+
+            <nav>
+                <ul>
+                    <li><a onclick="handleClick('bookmark')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-bookmark fa-2xl" style="color: grey"></i></div><p>&nbsp;찜하기</p></a></li>
+                    <li><a onclick="handleClick('eye')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-eye fa-2xl" style="color: grey;"></div></i><p>보는중</p></a></li>
+                    <li><a onclick="handleClick('check')">&ensp;<div class="icon-container">&ensp;<i class="fa-solid fa-check fa-2xl" style="color: grey;"></div></i><P>봤어요</P></a></li>
+                    <li><a onclick="handleClick('ellipsis')">&emsp;<div class="icon-container">&emsp;<i class="fa-solid fa-ellipsis-vertical fa-2xl" style="color:grey;"></div></i><p>더보기</p></a></li>
+                </ul>
+
+            </nav>
+            <div class="container">
+                <div class="item1">내가 쓴 리뷰</div>
+                <div class="item2">
+                    <div class="writereview">
+                        <p style="font-weight: 500; font-size: 18px;">이 작품 어떠셨나요?</p>
+                        <div class="rating">
+                            <span class="rating__result"></span> 
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                            <i class="rating__star far fa-star fa-2xl"></i>
+                        </div>
+                        <p><button id="reviewButton" onclick="openLoginPopup()">리뷰 작성</button></p>
+                        <div id="loginPopup">
+                            <div id="loginBox">
+                            <span id="closeButton" onclick="closeLoginPopup()">X</span>
+                            <h2>로그인하고 모든 기능을  자유롭게 이용해보세요!</h2>
+                            <!-- 로그인 폼 등을 추가 -->
+                            <div class="loginform">
+                                <img src="../img/sge/present-removebg-preview.png" alt="">
+                                <button class="kakaotalkbutton"  ><i class="fa-solid fa-comment" style="padding-top: 15px;"><a href="../html/log-in.html">&ensp;카카오톡으로 시작하기</a></i></button>
+                                <button class="otherwaybutton"><i class="fa-solid fa-comment" style="padding-top: 15px;"><a href="../html/log-in.html">&ensp;다른 방법으로 시작하기</a></i></button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item3"><p>모든 리뷰</p></div>
+                <div class="item4" id="scroll">
+                    <div class="contentwrap1">
+                        <a href="" style="font-weight: 700;">가올가오리74<span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 4.5</span></a>
+                        <p>영화 <플랜 75>는 초고령사회에 돌입한 근미래의 일본을 배경으로 한다. 대책을 고민하던 정부가 노인의 안락사를 지원하는 '플랜 75'를 발표하면서 이에 따른 인간의 존엄과 사회적 책임에 대해 풀어놓는다. 누군가는 그랬다. '세상에 가장 평등한 것, 공평한 것이 있다면 그것은 죽음이다'라고.
+                            <section id="testSection">
+                                잘살든 못살든, 선하든 악하든 누구나 공평하게 맞는 죽음. <플랜 75>는 삶과 죽음을 (인위적으로) 가르는 행위에 대해 다각도로 살펴본다. 
+                                극중 일본 정부는 75세 이상 노인의 안락사를 지원하는 정책을 발표한다. 고령화 사회의 부담을 지고 사는 청년층의 어깨의 짐을 덜어주겠다는 취지다. 물론 노인의 자발적 참여를 기반으로 한다. 
+                                영화는  '플랜 75' 참여를 깊이 고민하는 78세의 '미치'를 중심으로 하며 해당 프로젝트를 집행하는 담당자들의 모습을 통해 인간의 존엄과  삶 & 죽음의 의미에 대한 질문을 던진다. 고령화 사회로 치닫는 우리 사회는 어떤 점을 고려해 대책을 세워하는가.한국 사회로 향하는 불편하고 잔인한 질문이 담긴 영화 <플랜 75>. 흥미로운 만큼 마음이 먹먹해지는 작품이 아닐까 싶다. 한번쯤 생각해봐야 할 죽음, 시간이 흐를수록 깊어지는 고민... 오는 2월 7일에 주인공과 함께 하면서 문제에 대한 답을 풀어보자. 
+                            </section>
+                            <button id="testButton">더보기</button></p>
+                        <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color: rgb(250, 90, 90); padding-left: 5px;"></i> 14개</div>
+                        <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;" ></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                        <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                    <div class="contentwrap1">
+                        <a href="" style="font-weight: 700;">malatang65@naver.com <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 3.5 </a>
+                        <p>존엄사는 진정으로 '존엄'한 것인가
+                            옴니버스 영화 10년에서의 동명의 단편을 동일한 감독이 장편화한 영화.
+                            멀지않은 미래, 초고령화 사회에 진입한 일본에서는 75세가 되면 국가에서 안락사를 권장 및 지원하는 "플랜 75"라는 제도가 생기게 된다.
+                            플랜 75 제도를 활용해 안락사를 준비하는 노인들과 속에서 근무하는 청년들의 이야기이다.
+                            안락사, 존엄사는 현재 일부 국가에서 불치병이나 말기 환자에 한해 실행되기도 하는 만큼 현실에 대입해 많은 고찰을 하게 만든다.
+                            동시에 국가 체제에서 엄연한 죽음을 권장하고 지원하며, 그로 인해 무언으로 안락사를 떠미는 사회적 분위기는 그야말로 공포영화 그 자체이다.
+                            영화는 관객에게 "존엄사가 진짜 존엄한 것인가" 라는 질문을 던진다.</p><br>
+                        <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color:rgb(250, 90, 90); padding-left: 5px;"></i> 10개</div>
+                        <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;"></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                        <hr class="divider" style="margin: 0px 0px 8px ;">
+    
+                    </div>
+
+                    <div class="contentwrap1">
+                            <a href="" style="font-weight: 700;">sehun1113@gmail.com <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 3.0</a>
+                            <p>극단성을 현실적인 당대성으로</p><br>
+                            <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color:rgb(250, 90, 90); padding-left: 5px;"></i> 0개</div>
+                            <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;"></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                            <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                    <div class="contentwrap1">
+                                <a href="" style="font-weight: 700;">gracias09 <span class="smallrating"><i class="fa-solid fa-star fa-xs" style="color: #404040;"></i> 4.5</span></a>
+                                <p>플랜75
+                                    일본이 초고령사회로 진입한건 꽤 오래전의 일이다. 그래서 이 이야기는 더 충격적이면서도 뒤끝이 씁쓸한 영화였다.
+                                    .
+                                    정부에서 75세 이상의 노인들을 대상으로 죽음을 적극 지원하는 프로그램이 플랜75...
+                                    이 프로그램에선 노인에게 가입과 동시에 10만엔을 미리 지급한다고 했다. 그래서 75세 이상 노인들에게 죽는 순간까지 하고 싶은 일을 다 할 수 있도록 지원하는건줄 알았는데...
+                                    .
+                                    영화를 보다보니 안락사를 시키고 있는것이었다.
+                                    .
+                                    꽤 충격적이지만 당하는 사람들은 너무 자연스럽더라..ㅜㅜ
+                                    .
+                                    주인공인 78세 미치 역시 플랜75를 신청하고 자신이 하고 싶었던 일을 하지만 결국 마지막엔 또 다른 선택을 하게 되는걸 보니 안심이 되더라눈..
+                                    .
+                                    아무리 초고령사회가 되었다 하더라도 사람의 목숨을 국가가 함부로 한다는 발상 자체가 일본이라서 나올 수 있는 생각이라는게 한편으론 섬뜩하기도 하더라.
+                                    .
+                                    리뷰를 쓰면서도 살짝 소름이 돋는다.
+                                    <section id="testSection">
+                                        스타 이즈 본은 제목처럼 한 스타의 탄생과 관련된 이야기다. 스타였던 남자와 무명이 여자의 음악 및 관계가 펼쳐진다. 음악으로 시작해 음악으로 끝나는 영화로 <스타 이즈 본>의 노래는 인물들의 상황, 감정, 내면이 담긴 제2의 대사로서 기능하고 있다. 이런 음악을 자주 들을 수 있는 덕에 진한 감동이 끝없이 귀로 쏟아지며, 레이디 가가라는 걸출한 가수 덕에 콘서트를 감상하는 듯한 즐거움도 있다.
+                                        하지만 노래의 사용 빈도가 잦아, 후반부로 갈수록 노래에 큰 흥미를 갖지 못할 수도 있다. 혹은, 음악이 없는 장면이 심심하게 느껴질 수도 있다. 클린트 이스트우드 감독이라면, 음악의 사용을 좀 더 절제하는 방향을 택했을 것 같다. 노래에서 오는 감동을 줄이는 대신, 음악 없는 장면의 힘을 더 높이면서 인물에게 더 관심을 가지려 하지 않았을까. 잭슨(브래들리 쿠퍼)의 혼란과 갈등이 술과 술주정으로 단편적으로 표현될 뿐, 그 알코올을 뚫고서 내면을 깊게 바라볼 기회가 잘 없던 것 같다. 지금도 나쁘지 않지만, 음악이 아닌 인물과 이야기만으로도 관객을 좀 더 흔들 수 있었을 것 같아 아쉽다.
+                                    </section>
+                                    <button id="testButton">더보기</button></p>
+                                <div class="commentshare"><i class="fa-solid fa-heart fa-xs" style="color: rgb(250, 90, 90); padding-left: 5px;"></i> 14개</div>
+                                <div class="commentshare"><i class="fa-solid fa-comment fa-sm" style = "color: #5d5e5f;" ></i> 댓글달기 &emsp; <i class="fa-solid fa-share fa-sm" style="color: #5d5e5f;"></i> 공유하기</div>
+                                <hr class="divider" style="margin: 0px 0px 8px ;">
+                    </div>
+
+                </div> 
+                </div>
+<div  class="allreviewbutton"><a >모든 리뷰 보기 > </a></div>
+            
+            </div>
+
+
+        
+<iframe src="../html/footer.html" frameborder="0" width="100%" height="100%" class="iframe-end" ></iframe>
+<script src="../js/review.js"></script>
+</body>
+</html>
