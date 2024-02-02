@@ -1,4 +1,4 @@
-    // 로그인 창
+    // 로그인  팝업 창 
     function openLoginPopup() {
         document.getElementById("loginPopup").style.display = "flex";
         document.querySelector('.item4').style.display = 'none'
@@ -8,7 +8,7 @@
         document.getElementById("loginPopup").style.display = "none";
         document.querySelector('.item4').style.display ='inline-block'}
     
-        // 더보기 버튼
+        // 더보기  토글
     const button = document.getElementById('testButton');
     const section = document.getElementById('testSection');
     
