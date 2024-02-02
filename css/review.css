@@ -275,3 +275,50 @@ nav ul li{display: inline-block; padding: 20px; margin:0 auto; justify-content: 
 
 .carousel-item {
     width: 100%;}
+
+    @media screen and (min-width:320px) and (max-width:425px) {
+        #carousel-container{display: none;} 
+        #carousel-container2{display: none;}
+        .imagecontainer img {
+            width: 300px; /* 이미지를 화면 너비에 맞게 조정 */    
+        }
+        .imagetext{display: none;}
+    
+        .imagetext {
+            text-align: center; /* 텍스트 중앙 정렬 */
+        }
+    
+        .button { width: 60px;
+            
+            display: block; /* 버튼을 블록 레벨로 표시하여 세로로 배치 */
+            margin-left: 0; /* 좌측 여백 없앰 */
+            margin-top: 10px; /* 버튼 사이 간격 조절 */
+        }
+        
+        nav{display: none;}
+    
+        /* nav ul {
+            flex-direction: column; 
+            align-items: center; 
+        } */
+    
+        .item1,
+        .item2,
+        .item3,
+        .item4 {
+            width: 320px; /* 각 아이템을 화면에 꽉 차게 설정 */
+        }
+    
+        .contentwrap1 { width: 300px;
+            padding: 10px; /* 콘텐츠 간격 조절 */
+        }
+    
+        #testSection,
+        #testButton {
+            display: none; /* 테스트 섹션과 버튼 숨김 */
+        }
+    
+        .allreviewbutton {
+            text-align: center; /* 모든 리뷰 버튼 중앙 정렬 */
+
+    }}
