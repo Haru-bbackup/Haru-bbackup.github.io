@@ -36,11 +36,12 @@
 .name{
   display: flex;
   height: 40px;
-  width: auto;
+  width: 80%;
   border: 1px solid;
   border-color:black;
   border-radius: 80px;
   margin: 10px;
+  padding: 5px;
 }
 
 .menu{
@@ -48,16 +49,18 @@
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 260px;
+  width: 90%;
   border: 1px solid;
   border-color:black;
   border-radius: 80px;
   margin: 10px;
+  padding: 5px;
 }
 
 .input-date{
   border: none;
-  padding: 0px 15px 0px 0px;
+  padding: 0px 0px 0px 10px;
+  width: 100%;
 }
 
 
@@ -86,6 +89,10 @@
   height: 50px;
   background-color: white;
   border: 1px solid;
+}
+.index-menu{
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width:426px) {
@@ -122,16 +129,10 @@
   
   .name-sex{
     flex-direction: column;
-    align-items: center;
-  }
-  .name, .menu{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
   .index-menu{
-    margin-left: 50px;
-    width: 80%;
+    width: 100%;
+    margin-right: 70px;
   }
   .id{
     width: 90%;
@@ -145,4 +146,8 @@
   .email-box{
     width: 90%;
   }
+  .menu{
+    width: 100%;
+  }
+
 }
